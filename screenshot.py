@@ -1,12 +1,12 @@
 import time
-import pyautogui
-import tkinter as tk
+import pyautogui    #used for python screenshot function
+import tkinter as tk    #function for gui for this program
 
 
 def screenshot():
     name = int(round(time.time() * 1000))
     name = '{}.png'.format(name)
-    time.sleep(2)
+    time.sleep(2)                               #This def is for saving the screenshot in different names
     img = pyautogui.screenshot(name)
     img.show()
 
